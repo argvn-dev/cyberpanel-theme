@@ -1,0 +1,98 @@
+:root {
+  --bg-sidebar: #fff !important;
+}
+[data-theme="dark"] {
+  --bg-primary: #0A0A0A !important;
+  --bg-secondary: #171717 !important;
+  --bg-hover: #262626 !important;
+  --bg-sidebar: #171717 !important;
+  --bg-sidebar-item: #171717 !important;
+  --border-color: #262626 !important;
+  --accent-color: #00923F !important;
+}
+
+::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+#header {
+  height: 60px !important;
+  background-color: var(--bg-primary) !important;
+  box-shadow: none !important;
+}
+
+#header .logo, #header-right .info-text, #header-right .social-links {
+  display: none !important;
+}
+
+#main-content {
+  padding: 40px 6px 6px !important;
+}
+.insights-grid .insight-card:nth-child(3) {
+    display: none;
+}
+.page-header {
+  top: -8px;
+  position: fixed !important;
+  margin: 0px !important;
+  border: none !important;
+  z-index: 9999 !important;
+}
+
+#sidebar .sidebar-logo {
+  margin: 0px !important;
+  box-shadow: none !important;
+}
+
+#sidebar .sidebar-logo .brand {
+  font-size: 0;
+  position: relative;
+}
+
+#sidebar .sidebar-logo .logo-icon {
+    background: url("data:image/png;base64,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") center / contain no-repeat !important;
+}
+
+#sidebar .sidebar-logo .logo-icon img {
+    opacity: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#sidebar .sidebar-logo .brand::after {
+  content: 'Access Media';
+  font-size: 16px;
+  font-weight: bold;
+}
+#sidebar .server-info {
+  display: none !important;
+}
+
+#sidebar .menu-item {
+  padding: 4px 8px 4px 4px !important;
+}
+#sidebar .menu-item .icon-wrapper {
+  background: none !important;
+}
+#sidebar .menu-item .badge {
+  display: none !important;
+}
+#sidebar .section-header {
+  background: none !important;
+  text-align: left !important;
+}
+a.menu-item[href="/base/design"] {
+    display: none !important;
+}
+a.menu-item[href="https://platform.cyberpersons.com/"] {
+    display: none !important;
+}
+a.menu-item[href="https://cyberpanel.net/KnowledgeBase/"] {
+    display: none !important;
+}
+a.menu-item:has(.fa-wordpress) {
+    display: none !important;
+}
+#wordpress-submenu {
+    display: none !important;
+}
